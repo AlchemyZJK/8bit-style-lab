@@ -1,0 +1,25 @@
+---
+---
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Kongtext";
+}
+
+@import "header";
+
+@font-face {
+  font-family: "Kongtext";
+  src: url("/assets/font/kongtext/KongtextRegular.eot");
+  src: url("/assets/font/kongtext/KongtextRegular.eot?#iefix") format("embedded-opentype"),
+      url("/assets/font/kongtext/KongtextRegular.woff2") format("woff2"),
+      url("/assets/font/kongtext/KongtextRegular.woff") format("woff"),
+      url("/assets/font/kongtext/KongtextRegular.ttf") format("truetype"),
+      url("/assets/font/kongtext/KongtextRegular.svg#KongtextRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
