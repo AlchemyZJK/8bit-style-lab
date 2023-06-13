@@ -1,4 +1,56 @@
-.header-container {
+.navbar{
   padding: 0 10%;
   font-size: 24px;
+  overflow: hidden;  // BFC
+}
+
+.logo {
+  float: left;
+  display: flex;
+  .icon {
+    width: 64px;
+    height: 64px;
+    background-image: url(/assets/imgs/erlenmeyer-flask-frames.png);
+    &:hover {
+      animation: drop-flask 1.2s steps(16);
+    }
+  }
+  .title {
+    margin-left: 24px;
+    line-height: 64px;
+  }
+}
+
+.nav-items {
+  float: right;
+  display: flex;
+  line-height: 64px;
+}
+
+.non-style-ul {
+  list-style-type: none;  // remove dot
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;  // horizontal layout
+  }
+}
+
+.non-style-a {
+  text-decoration: none;
+  &:hover {
+    color: rgb(255, 241, 118);
+  }
+  &:active {
+    color: rgb(245, 127, 23);
+  }
+}
+
+@keyframes drop-flask {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1024px;
+  }
 }

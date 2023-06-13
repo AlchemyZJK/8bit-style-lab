@@ -11,6 +11,10 @@
 
 @import "header";
 
+.page-container {
+  padding: 0 16%;
+}
+
 @font-face {
   font-family: "Kongtext";
   src: url("/assets/font/kongtext/KongtextRegular.eot");
