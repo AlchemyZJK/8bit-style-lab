@@ -6,14 +6,18 @@
   padding: 0;
   background-color: black;
   color: white;
-  font-family: "Kongtext";
+  font-family: "Kongtext", "Zpix";
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;  // disable scroll bar
 }
 
 @import "header";
-
-.page-container {
-  padding: 0 16%;
-}
+@import "index";
+@import "footer";
 
 @font-face {
   font-family: "Kongtext";
@@ -23,7 +27,20 @@
       url("/assets/font/kongtext/KongtextRegular.woff") format("woff"),
       url("/assets/font/kongtext/KongtextRegular.ttf") format("truetype"),
       url("/assets/font/kongtext/KongtextRegular.svg#KongtextRegular") format("svg");
-  font-weight: normal;
+  // font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Zpix';
+  src: url("/assets/font/zpix/Zpix.eot");
+  src: url("/assets/font/zpix/Zpix.eot?#iefix") format("embedded-opentype"),
+      url("/assets/font/zpix/Zpix.woff2") format("woff2"),
+      url("/assets/font/zpix/Zpix.woff") format("woff"),
+      url("/assets/font/zpix/Zpix.ttf") format("truetype"),
+      url("/assets/font/zpix/Zpix.svg#Zpix") format("svg");
+  // font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

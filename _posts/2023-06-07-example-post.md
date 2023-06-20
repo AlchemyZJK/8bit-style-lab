@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Example Post
+tags: [test, English]
 ---
 
-# Example Post
+Begin each day by telling yourself: I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness — all of them due to the offenders' ignorance of what is good or evil. But for my part I have long perceived the nature of good and its nobility, the nature of evil and its meanness, and also the nature of the evildoer himself, who is my brother (not in the physical sense, but as a fellow-creature similarly endowed with reason and a share of the divine); therefore none of those things can injure me, for nobody can implicate me in what is degrading. Neither can I be angry with my brother or fall foul of him; for he and I were born to work together, like a man's two hands, feet, or eyelids, or like the upper and lower rows of his teeth. To obstruct each other is against Natures law 一 and what is irritation or aversion but a form of obstruction...
+
+Men seek for seclusion in the wilderness, by the seashore, or in the mountains — a dream you have cherished only too fondly yourself. But such fancies are wholly unworthy of a philosopher, since at any moment you choose you can retire within yourself. Nowhere can man find aquieter or more untroubled retreat than in his own soul... avail yourself often, then, of this retirement, and so continually renew yourself. Make your rules of life brief, yet so as to embrace the fundamentals; recurrence to them will then suffice to remove all vexation, and send you back without fretting to the duties to which you must return...
+
+At day's first light have in readiness, against disinclination to leave your bed, the thought that"I am rising for the work of man." Must I grumble at setting out to do what I was born for, and for the sake of which I have been brought into the world? Is this the purpose of my creation, to lie here under the blankets and keep myself warm? "ah, but it is a great deal more pleasant!" was it for pleasure, then, that you were born, and not for work, not for effort? Look at the plants, the sparrows, ants, spiders, bees, all busy at their own tasks, each doing his part towards a coherent world-order; and will you refuse man's share of the work, instead of being prompt to carry out Nature's bidding?

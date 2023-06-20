@@ -1,4 +1,12 @@
 title: Alchemy's Lab
 author:
   name: GitHub User
+  avatar: /assets/avatar/your-avatar.png
   email: your-email@domain.com
+  github: https://github.com/your-github-id
+  intro: your-one-line-self-introduction
+
+
+plugins:
+  - jekyll-paginate
+paginate: 1

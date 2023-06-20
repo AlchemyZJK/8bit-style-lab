@@ -1,0 +1,196 @@
+@mixin rounded-box($width, $height, $border-color) {
+  display: grid;
+  width: $width;
+  height: $height;
+  grid-template-columns: 8px auto 8px;
+  grid-template-rows: 8px auto 8px;
+  .left-top-corner {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    background-color: $border-color;
+  }
+  .top-line {
+    width: 100%;
+    height: 4px;
+    background-color: $border-color;
+  }
+  .right-top-corner {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    top: 4px;
+    background-color: $border-color;
+  }
+  .left-line {
+    width: 4px;
+    height: 100%;
+    background-color: $border-color;
+  }
+  .right-line {
+    width: 4px;
+    height: 100%;
+    position: relative;
+    left: 4px;
+    background-color: $border-color;
+  }
+  .left-bottom-corner {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    left: 4px;
+    background-color: $border-color;
+  }
+  .bottom-line {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    top: 4px;
+    background-color: $border-color;
+  }
+  .right-bottom-corner {
+    width: 4px;
+    height: 4px;
+    background-color: $border-color;
+  }
+}
+
+@mixin normal-box($width, $height, $border-color) {
+  display: grid;
+  width: $width;
+  height: $height;
+  grid-template-columns: 4px auto 4px;
+  grid-template-rows: 4px auto 4px;
+  .top-line, .bottom-line {
+    width: 100%;
+    height: 4px;
+    background-color: $border-color;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .left-line, .right-line {
+    width: 4px;
+    height: 100%;
+    background-color: $border-color;
+    position: relative;
+    top: 0;
+    left: 0
+  }
+  .left-top-corner, .right-top-corner, .left-bottom-corner, .right-bottom-corner {
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+  }
+}
+
+.page-container {
+  display: flex;
+}
+
+.author-info {
+  width: 24%;
+}
+
+.post-list {
+  flex: 1;
+  margin-right: 24%;
+  height: calc(100vh - 88px - 120px);
+  position: relative;
+}
+.post-container {
+  @include rounded-box(100%, 120px, white);
+  margin-bottom: 12px;
+}
+.post-card-container {
+  padding: 12px;
+  .post-title {
+    text-decoration: none;
+    color: rgb(255, 241, 118);
+    &:hover {
+      color: rgb(255, 160, 0);
+    }
+    &:active {
+      color: rgb(245, 127, 23);
+    }
+  }
+  .post-date {
+    float: right;
+    overflow: hidden;  // BFC
+  }
+  .post-intro {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 12px;
+    font-size: 12px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.inline-wrap {
+  display: inline-block;
+}
+
+.tag-container {
+  @include normal-box(auto, auto, rgb(255, 241, 118));
+}
+.tag {
+  background-color: rgb(255, 241, 118);
+  color: black;
+  font-size: 12px;
+  padding: 0 6px;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+.previous-container, .next-container {
+  @include normal-box(auto, auto, rgb(255, 241, 118));
+  &:hover {
+    @include normal-box(auto, auto, rgb(255, 160, 0));
+  }
+  &:active {
+    @include normal-box(auto, auto, rgb(245, 127, 23));
+  }
+}
+.disabled-previous-container, .disabled-next-container {
+  @include normal-box(auto, auto, grey);
+}
+.previous, .next {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(255, 241, 118);
+  color: black;
+  &:hover {
+    background-color: rgb(255, 160, 0);
+  }
+  &:active {
+    background-color: rgb(245, 127, 23);
+  }
+}
+.disabled-previous, .disabled-next {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  background-color: grey;
+  color: white;
+}
+.page-number {
+  font-size: 20px;
+  line-height: 32px;
+}
