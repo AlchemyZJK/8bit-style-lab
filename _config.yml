@@ -9,4 +9,4 @@ author:
 
 plugins:
   - jekyll-paginate
-paginate: 1
+paginate: 5

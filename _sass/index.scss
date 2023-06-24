@@ -100,6 +100,21 @@
   height: calc(100vh - 88px - 120px);
   position: relative;
 }
+.post-cards {
+  width: 100%;
+  height: calc(100% - 48px);
+  overflow-x: scroll;
+  padding: 4px;
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 241, 118);
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
 .post-container {
   @include rounded-box(100%, 120px, white);
   margin-bottom: 12px;

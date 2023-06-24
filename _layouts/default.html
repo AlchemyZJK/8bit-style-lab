@@ -6,40 +6,42 @@
     <div class="page-container">
       <div class="author-info">Author Info</div>
       <div class="post-list">
-        {% for post in paginator.posts %}
-          <div class="post-container">
-            <div class="left-top-corner"></div>
-            <div class="top-line"></div>
-            <div class="right-top-corner"></div>
-            <div class="left-line"></div>
-            <div class="content post-card-container">
-              <a class="post-title" href="{{ post.url }}">{{post.title}}</a>
-              <span class="post-date">{{ post.date | date: "%F" }}</span>
-              <p class="post-intro">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
-              <div class="tag-list">
-                {% for tag in post.tags%}
-                <div class="inline-wrap">
-                  <div class="tag-container">
-                    <div class="left-top-corner"></div>
-                    <div class="top-line"></div>
-                    <div class="right-top-corner"></div>
-                    <div class="left-line"></div>
-                    <span class="content tag">{{tag}}</span>
-                    <div class="right-line"></div>
-                    <div class="left-bottom-corner"></div>
-                    <div class="bottom-line"></div>
-                    <div class="right-bottom-corner"></div>
+        <div class="post-cards">
+          {% for post in paginator.posts %}
+            <div class="post-container">
+              <div class="left-top-corner"></div>
+              <div class="top-line"></div>
+              <div class="right-top-corner"></div>
+              <div class="left-line"></div>
+              <div class="content post-card-container">
+                <a class="post-title" href="{{ post.url }}">{{post.title}}</a>
+                <span class="post-date">{{ post.date | date: "%F" }}</span>
+                <p class="post-intro">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
+                <div class="tag-list">
+                  {% for tag in post.tags%}
+                  <div class="inline-wrap">
+                    <div class="tag-container">
+                      <div class="left-top-corner"></div>
+                      <div class="top-line"></div>
+                      <div class="right-top-corner"></div>
+                      <div class="left-line"></div>
+                      <span class="content tag">{{tag}}</span>
+                      <div class="right-line"></div>
+                      <div class="left-bottom-corner"></div>
+                      <div class="bottom-line"></div>
+                      <div class="right-bottom-corner"></div>
+                    </div>
                   </div>
+                  {% endfor %}
                 </div>
-                {% endfor %}
               </div>
+              <div class="right-line"></div>
+              <div class="left-bottom-corner"></div>
+              <div class="bottom-line"></div>
+              <div class="right-bottom-corner"></div>
             </div>
-            <div class="right-line"></div>
-            <div class="left-bottom-corner"></div>
-            <div class="bottom-line"></div>
-            <div class="right-bottom-corner"></div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
         <div class="pagination">
           <div class="inline-wrap">
             {% if paginator.previous_page %}
