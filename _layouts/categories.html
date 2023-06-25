@@ -1,0 +1,5 @@
+{% for category in site.categories %}
+  {% assign category_name = category | first %}
+  {% assign posts_of_category = category | last %}
+  <a href="/{{category_name}}">{{category_name}}</a>
+{% endfor %}

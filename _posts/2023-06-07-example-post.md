@@ -2,6 +2,7 @@
 layout: post
 title: Example Post
 tags: [test, English]
+category: test
 ---
 
 Begin each day by telling yourself: I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness — all of them due to the offenders' ignorance of what is good or evil. But for my part I have long perceived the nature of good and its nobility, the nature of evil and its meanness, and also the nature of the evildoer himself, who is my brother (not in the physical sense, but as a fellow-creature similarly endowed with reason and a share of the divine); therefore none of those things can injure me, for nobody can implicate me in what is degrading. Neither can I be angry with my brother or fall foul of him; for he and I were born to work together, like a man's two hands, feet, or eyelids, or like the upper and lower rows of his teeth. To obstruct each other is against Natures law 一 and what is irritation or aversion but a form of obstruction...

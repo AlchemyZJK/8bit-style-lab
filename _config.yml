@@ -9,4 +9,8 @@ author:
 
 plugins:
   - jekyll-paginate
+
+# pagination
 paginate: 5
+# categories
+permalink: pretty

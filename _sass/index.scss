@@ -97,16 +97,17 @@
 .post-list {
   flex: 1;
   margin-right: 24%;
-  height: calc(100vh - 88px - 120px);
+  height: 84vh;
   position: relative;
 }
 .post-cards {
   width: 100%;
-  height: calc(100% - 48px);
-  overflow-x: scroll;
-  padding: 4px;
+  height: 88%;
+  overflow-x: auto;
+  padding: 8px;
   &::-webkit-scrollbar {
     width: 12px;
+    border: 1px white solid;
   }
   &::-webkit-scrollbar-thumb {
     background-color: rgb(255, 241, 118);
@@ -117,7 +118,7 @@
 }
 .post-container {
   @include rounded-box(100%, 120px, white);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 .post-card-container {
   padding: 12px;
@@ -166,8 +167,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0;
+  margin: 8px 0;
 }
 .previous-container, .next-container {
   @include normal-box(auto, auto, rgb(255, 241, 118));
