@@ -97,24 +97,10 @@
 .post-list {
   flex: 1;
   margin-right: 24%;
-  height: 84vh;
-  position: relative;
 }
 .post-cards {
   width: 100%;
-  height: 88%;
-  overflow-x: auto;
-  padding: 8px;
-  &::-webkit-scrollbar {
-    width: 12px;
-    border: 1px white solid;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 241, 118);
-  }
-  &::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
+  height: 640px;
 }
 .post-container {
   @include rounded-box(100%, 120px, white);

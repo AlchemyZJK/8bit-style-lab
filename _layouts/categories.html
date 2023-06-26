@@ -1,5 +1,19 @@
-{% for category in site.categories %}
-  {% assign category_name = category | first %}
-  {% assign posts_of_category = category | last %}
-  <a href="/{{category_name}}">{{category_name}}</a>
-{% endfor %}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <div class="category-list">
+      {% for category in site.categories %}
+        {% assign category_name = category | first %}
+        {% assign posts_of_category = category | last %}
+        <!-- TODO: display the tree structure category 
+          by add link to each main category(/{{category_name}}).
+          Need a script to generate the category_name.md? Hope there is a more elegant approach.
+        -->
+          <a href="/{{category_name}}">{{category_name}}</a>
+      {% endfor %}
+    </div>
+    {%- include footer.html -%}
+  </body>
+</html>
